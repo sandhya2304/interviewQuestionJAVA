@@ -5,32 +5,28 @@ import java.util.Scanner;
 
 public class Pyramid2 
 {
+	
+	public static void sumDigit(int number)
+	{
+		int copy = number;
+		int sum = 0;
+		
+		while(copy!=0)
+		{
+			int lastDigit = copy%10;
+			sum = sum+lastDigit;
+			
+			copy =copy/10;
+		}
+		
+		System.out.println(sum);
+		
+	}
+	
+	
 	public static void main(String[] args) 
 	{
-		int arry1[] = {1,2,3,4,5};
-		int arry2[] = {1,2,3,4,5,6};
-		
-		boolean equalOrNot = true;
-		
-		if(arry1.length == arry2.length)
-		{
-			for(int i=0;i<arry1.length;i++){
-				if(arry1[i] !=arry2[i]){
-					equalOrNot = false;
-				}
-			}
-		}else{
-		      equalOrNot = false;
-		}
-		
-		
-		if(equalOrNot)
-		{
-			System.out.println("yes equal");
-		}else{
-			System.out.println("not equal");
-		}
-           
+		sumDigit(12345);
 	}
 
 }

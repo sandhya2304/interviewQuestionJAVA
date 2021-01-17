@@ -6,15 +6,12 @@ public class ListAllFiles {
 
 	public static void main(String[] args)
 	{
+		File file = new File("D://");
+		String[] folder = file.list();
 		
-		File folder = new File("D://");
-		String[] files  = folder.list();
-		
-		for(String file:files)
-		{
-			System.out.println(file);
+		for(String string:folder){
+			System.out.println(string);
 		}
-		
 
 	}
 
