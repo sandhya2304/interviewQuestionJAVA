@@ -1,2 +1,2 @@
 # interviewQuestionJAVA
-practice intervoew question
+practice interview question
